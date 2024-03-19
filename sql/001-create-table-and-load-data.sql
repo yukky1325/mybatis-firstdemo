@@ -1,11 +1,12 @@
-DROP TABLE IF EXISTS movies;
+DROP TABLE IF EXISTS players;
 
-CREATE TABLE movies (
+CREATE TABLE players (
   id int unsigned AUTO_INCREMENT,
-  name VARCHAR(100) NOT NULL,
-  director VARCHAR(100) NOT NULL,
+  name VARCHAR(20) NOT NULL,
+  birthday DATE NOT NULL,
+  ps VARCHAR(50) NOT NULL,
   PRIMARY KEY(id)
 );
 
-INSERT INTO movies (name, director) VALUES ("ショーシャンクの空に", "フランク・ダラボン");
-INSERT INTO movies (name, director) VALUES ("この世界の片隅に", "片渕須直");
+INSERT INTO players (name, birthday, ps) VALUES ("岩崎優", '1991-06-19', "ピッチャー");
+INSERT INTO players (name, birthday, ps) VALUES ("岩貞祐太", '1991-09-05', "ピッチャー");
