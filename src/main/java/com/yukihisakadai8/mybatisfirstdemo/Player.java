@@ -6,14 +6,14 @@ public class Player {
     private int id;
     private String name;
 
-    private Date birthdy;
+    private Date birthday;
 
     private String ps;
 
-    public Player(int id, String name, Date birthdy, String ps) {
+    public Player(int id, String name, Date birthday, String ps) {
         this.id = id;
         this.name = name;
-        this.birthdy = birthdy;
+        this.birthday = birthday;
         this.ps = ps;
     }
 
@@ -25,8 +25,8 @@ public class Player {
         return name;
     }
 
-    public Date getBirthdy() {
-        return birthdy;
+    public Date getBirthday() {
+        return birthday;
     }
 
     public String getPs() {
